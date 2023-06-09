@@ -1,0 +1,53 @@
+{
+    "gpu": true,
+    "gpu_id":3,
+    "seed": 0,
+    "train": true,
+    "exp_id": "1_link01_STGCN_PEMSD4",
+    "init_weight_inf_or_zero": "zero",
+    "set_weight_link_or_dist": "link",
+    "calculate_weight_adj": false,
+    "smi_weight_adj": false,
+    "distance_inverse": false,
+    "bidir_adj_mx": true,
+    "batch_size": 64,
+    "Ks": 3,
+    "Kt": 3,
+    "blocks": [
+        [
+            1,
+            32,
+            64
+        ],
+        [
+            64,
+            32,
+            128
+        ]
+    ],
+    "graph_conv_type": "gcnconv",
+    "stgcn_train_mode": "quick",
+    
+    "scaler": "standard",
+    "use_early_stop": true,
+    "patience": 20,
+    "evaluator_mode": "average",
+    "max_epoch": 300,
+    "learner": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "lr_decay": true,
+    "lr_scheduler": "reducelronplateau",
+    "lr_patience": 10,
+    "lr_decay_ratio": 0.5,
+    "train_rate": 0.6,
+    "eval_rate": 0.2,
+    "add_time_in_day": false,
+    "add_day_in_week": false,
+    "input_window": 12,
+    "output_window": 12,
+    "log_level": "INFO",
+    "saved_model": true,
+    "load_best_epoch": true,
+    "time_intervals": 300
+}
