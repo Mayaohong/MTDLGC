@@ -1,0 +1,64 @@
+{
+    "traffic_state_pred": {
+        "allowed_model": [
+            "DCRNN",
+            "STGCN",
+            "TGCN",
+            "ASTGCN",
+            "LSTM",
+            "DGCN",
+            "MTSLGC",
+            "MTDLGC",
+            "RGCLSTM"
+        ],
+        "allowed_dataset": [
+            "PEMSD4",
+            "PEMSD8"
+        ],
+        "DCRNN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "DCRNNExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "MTSLGC": {
+            "dataset_class": "MTLGCDataset",
+            "executor": "MTLGCExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "RGCLSTM": {
+            "dataset_class": "ASTGCNDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "MTDLGC": {
+            "dataset_class": "MTLGCDataset",
+            "executor": "MTLGCExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "STGCN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "TGCN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "ASTGCN": {
+            "dataset_class": "ASTGCNDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "LSTM": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "DGCN": {
+            "dataset_class": "ASTGCNDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        }
+    }
+}
