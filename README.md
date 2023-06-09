@@ -17,3 +17,5 @@ The script ```run_model.py``` is used for training and evaluating our proposed m
 ```bash
 python run_model.py
 ```
+# Acknowledgments
+"We would like to acknowledge the implementation framework for traffic prediction models provided by [LibCity](https://github.com/LibCity/Bigscity-LibCity). The framework served as a valuable resource and reference for our research work.  We are very grateful to the LibCity team for their contributions and efforts in advancing the field of traffic prediction."
