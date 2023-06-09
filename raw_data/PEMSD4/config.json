@@ -1,0 +1,42 @@
+{
+  "geo": {
+    "including_types": [
+      "Point"
+    ],
+    "Point": {}
+  },
+  "rel": {
+    "including_types": [
+      "geo"
+    ],
+    "geo": {
+      "cost": "num"
+    }
+  },
+  "dyna": {
+    "including_types": [
+      "state"
+    ],
+    "state": {
+      "entity_id": "geo_id",
+      "traffic_flow": "num"
+    }
+  },
+  "info": {
+    "data_col": [
+      "traffic_flow"
+    ],
+    "weight_col": "cost",
+    "data_files": [
+      "PEMSD4"
+    ],
+    "geo_file": "PEMSD4",
+    "rel_file": "PEMSD4",
+    "output_dim": 1,
+    "time_intervals": 300,
+    "init_weight_inf_or_zero": "zero",
+    "set_weight_link_or_dist": "link",
+    "calculate_weight_adj": false,
+    "weight_adj_epsilon": 0.1
+  }
+}
